@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Web Automation Suite">
+    <parameter name="url" value="https://www.saucedemo.com/" />
+    <parameter name="browser" value="firefox"/>
+    <parameter name="userName" value="standard_user"/>
+    <parameter name="password" value="secret_sauce" />
+    <parameter name="firstName" value="Enrique" />
+    <parameter name="lastName" value="Whatever" />
+    <parameter name="postalCode" value="1216" />
+
+    <test name="Purchase Test" >
+        <classes >
+            <class name="org.tests.SwagLabsTest"/>
+        </classes>
+
+    </test>
+
+</suite>
